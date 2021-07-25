@@ -1,6 +1,6 @@
 
 function clickHandler() {
-    window.location = "/Journalinq";
+    window.location = "https://the-cloud-dev.github.io/Planner/Journalinq";
 }
 
 function getElementClicked(elementName, functioName) {
