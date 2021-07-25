@@ -20,6 +20,8 @@
   font-size: 200%;
   font-family: 'Zen Loop', cursive;
   font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
 .content {
