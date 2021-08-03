@@ -28,6 +28,9 @@ function removeElement() {
             localStorage.setItem('set2' + incriment, 0)
             localStorage.setItem('taskname' + incriment, '')
             localStorage.setItem('picker' + incriment, '')
+            document.getElementById('picker' + incriment).value = localStorage.getItem('picker' + incriment)
+            document.getElementById('taskname' + incriment).value = localStorage.getItem('taskname' + incriment)
+            document.getElementById('time' + incriment).value = localStorage.getItem('time' + incriment)
             window.setTimeout(5000)
             notification.close()
         }
