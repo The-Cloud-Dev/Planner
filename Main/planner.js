@@ -26,9 +26,9 @@ function removeElement() {
             var notification = new Notification('Journalinq', { body: text, icon: img });
             localStorage.setItem('set1' + incriment, 0)
             localStorage.setItem('set2' + incriment, 0)
-            localStorage.setItem('taskname' + incriment, '')
             localStorage.setItem('picker' + incriment, '')
             localStorage.setItem('time'+incriment,'')
+            localStorage.setItem('taskname' + incriment, '')
             document.getElementById('picker' + incriment).value = localStorage.getItem('picker' + incriment)
             document.getElementById('taskname' + incriment).value = localStorage.getItem('taskname' + incriment)
             document.getElementById('time' + incriment).value = localStorage.getItem('time' + incriment)
