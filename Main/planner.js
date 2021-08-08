@@ -87,7 +87,7 @@ function removeElement() {
             } else {
                 var text = 'Your task is due today!'
             }
-            var notification = new Notification('Journalinq', { body: text, ic on: img });
+            var notification = new Notification('Journalinq', { body: text, icon: img });
             window.setTimeout(5000)
             notification.close()
             localStorage.setItem('old name' + incriment, myvalue)
