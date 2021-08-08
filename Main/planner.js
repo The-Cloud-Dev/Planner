@@ -3,12 +3,15 @@ function removeElement() {
         document.getElementById('picker' + incriment).value = localStorage.getItem('picker' + incriment)
         document.getElementById('taskname' + incriment).value = localStorage.getItem('taskname' + incriment)
         document.getElementById('time' + incriment).value = localStorage.getItem('time' + incriment)
+        document.getElementById('select' + incriment).value = localStorage.getItem('select' + incriment)
     }
     var incriment = ""
     for (let i = 0; i < 7; i++) {
         if (localStorage.getItem('existing' + incriment) === '1') {
             document.getElementById('picker' + incriment).value = localStorage.getItem('picker' + incriment)
             document.getElementById('taskname' + incriment).value = localStorage.getItem('taskname' + incriment)
+            document.getElementById('time' + incriment).value = localStorage.getItem('time' + incriment)
+            document.getElementById('select' + incriment).value = localStorage.getItem('select' + incriment)
         }
         var myvalue = document.getElementById('taskname' + incriment).value
         if (document.getElementById('check' + incriment).checked === true) {
@@ -84,7 +87,7 @@ function removeElement() {
             } else {
                 var text = 'Your task is due today!'
             }
-            var notification = new Notification('Journalinq', { body: text, icon: img });
+            var notification = new Notification('Journalinq', { body: text, ic on: img });
             window.setTimeout(5000)
             notification.close()
             localStorage.setItem('old name' + incriment, myvalue)
@@ -108,6 +111,7 @@ for (let i = 0; i < 7; i++) {
         document.getElementById('picker' + inc).value = localStorage.getItem('picker' + inc)
         document.getElementById('taskname' + inc).value = localStorage.getItem('taskname' + inc)
         document.getElementById('time' + inc).value = localStorage.getItem('time' + inc)
+        document.getElementbyId('select' +inc).value = localStorage.getItem('select'+ inc)
     }
     if (inc === "") {
         inc = 1
