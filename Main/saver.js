@@ -1,6 +1,10 @@
 function save() {
     var incriment = ""
     for (let i = 0; i < 7; i++) {
+        var savervalue = document.getElementById('select+ incriment).value
+        if (localStorage.getItem('select'+incriment) != savervalue && savervalue != ""){
+            localStorage.setItem('select'+incriment, savervalue)
+        }
         var pickervalue = document.getElementById('picker' + incriment).value
         if (localStorage.getItem('picker' + incriment) != pickervalue && pickervalue != "") {
             localStorage.setItem('picker' + incriment, pickervalue)
