@@ -1,7 +1,7 @@
 function save() {
     var incriment = ""
     for (let i = 0; i < 7; i++) {
-        var savervalue = document.getElementById('select+ incriment).value
+        var savervalue = document.getElementById('select' + incriment).value
         if (localStorage.getItem('select'+incriment) != savervalue && savervalue != ""){
             localStorage.setItem('select'+incriment, savervalue)
         }
