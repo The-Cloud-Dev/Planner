@@ -111,7 +111,7 @@ for (let i = 0; i < 7; i++) {
         document.getElementById('picker' + inc).value = localStorage.getItem('picker' + inc)
         document.getElementById('taskname' + inc).value = localStorage.getItem('taskname' + inc)
         document.getElementById('time' + inc).value = localStorage.getItem('time' + inc)
-        document.getElementbyId('select' +inc).value = localStorage.getItem('select'+ inc)
+        document.getElementById('select' +inc).value = localStorage.getItem('select'+ inc)
     }
     if (inc === "") {
         inc = 1
