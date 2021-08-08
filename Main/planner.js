@@ -120,3 +120,4 @@ for (let i = 0; i < 7; i++) {
     }
 };
 setInterval(removeElement, 4000)
+ 
