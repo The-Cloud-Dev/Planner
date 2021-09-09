@@ -2,7 +2,6 @@ var used = localStorage.getItem('used');
 if (used === '1') {
     startPlanning()
 } else {
-    localStorage.setItem('used', 1);
     localStorage.setItem('set1', 0)
     localStorage.setItem('set2', 0)
     localStorage.setItem('existing', 0)
@@ -25,6 +24,7 @@ function click() {
 
 
 function startPlanning() {
+    localStorage.setItem('used', 1);
     window.location = 'https://The-Cloud-Dev.github.io/Planner';
 }
 click()
